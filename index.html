@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Blackjack with Side Bets</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Blackjack + Side Bets</h1>
+
+  <div id="balance">Balance: $1000</div>
+
+  <div id="side-bets">
+    <h2>Place Side Bets</h2>
+    <label><input type="number" id="bet-pair" min="0" value="0" /> Pair Bonus</label>
+    <label><input type="number" id="bet-aces" min="0" value="0" /> Ace Match</label>
+    <button id="deal">Deal</button>
+  </div>
+
+  <div id="game" style="display:none;">
+    <div class="hand-area">
+      <h2>Your Hand</h2>
+      <div id="player-hand"></div>
+      <p id="player-score"></p>
+    </div>
+    <div class="hand-area">
+      <h2>Dealer's Hand</h2>
+      <div id="dealer-hand"></div>
+      <p id="dealer-score"></p>
+    </div>
+    <div id="controls">
+      <button id="hit">Hit</button>
+      <button id="stand">Stand</button>
+    </div>
+    <h2 id="result"></h2>
+    <button id="next-round" style="display:none;">Next Round</button>
+  </div>
+
+  <script src="blackjack.js"></script>
+</body>
+</html>
