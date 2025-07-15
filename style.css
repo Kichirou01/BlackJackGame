@@ -1,0 +1,4 @@
+body { font-family: sans-serif; background:#222; color:#fff; text-align:center; }
+#balance, #side-bets { margin:20px auto; }
+.hand-area { display:inline-block; width:200px; margin:20px;}
+#controls button, #deal, #next-round { margin:10px; padding:10px 20px; }
